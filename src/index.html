@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramtin Attar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="/assets/favicon.png"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="french-language current" data-language="en">
+                EN
+            </div>
+            <div class="english-language" data-language="fr">
+                FR
+            </div>
+            <div class="vertical-line"></div>
+            <div class="email-link">
+                <a href="mailto:ramtinattar13@gmail.com" target="_blank">
+                    <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="linkedin-link">
+                <a href="https://www.linkedin.com/in/ramtin-attar/" target="_blank">
+                    <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.72 3.99997H5.37C5.19793 3.99191 5.02595 4.01786 4.86392 4.07635C4.70189 4.13484 4.55299 4.22471 4.42573 4.34081C4.29848 4.45692 4.19537 4.59699 4.12232 4.75299C4.04927 4.909 4.0077 5.07788 4 5.24997V18.63C4.01008 18.9901 4.15766 19.3328 4.41243 19.5875C4.6672 19.8423 5.00984 19.9899 5.37 20H18.72C19.0701 19.9844 19.4002 19.8322 19.6395 19.5761C19.8788 19.32 20.0082 18.9804 20 18.63V5.24997C20.0029 5.08247 19.9715 4.91616 19.9078 4.76122C19.8441 4.60629 19.7494 4.466 19.6295 4.34895C19.5097 4.23191 19.3672 4.14059 19.2108 4.08058C19.0544 4.02057 18.8874 3.99314 18.72 3.99997ZM9 17.34H6.67V10.21H9V17.34ZM7.89 9.12997C7.72741 9.13564 7.5654 9.10762 7.41416 9.04768C7.26291 8.98774 7.12569 8.89717 7.01113 8.78166C6.89656 8.66615 6.80711 8.5282 6.74841 8.37647C6.6897 8.22474 6.66301 8.06251 6.67 7.89997C6.66281 7.73567 6.69004 7.57169 6.74995 7.41854C6.80986 7.26538 6.90112 7.12644 7.01787 7.01063C7.13463 6.89481 7.2743 6.80468 7.42793 6.74602C7.58157 6.68735 7.74577 6.66145 7.91 6.66997C8.07259 6.66431 8.2346 6.69232 8.38584 6.75226C8.53709 6.8122 8.67431 6.90277 8.78887 7.01828C8.90344 7.13379 8.99289 7.27174 9.05159 7.42347C9.1103 7.5752 9.13699 7.73743 9.13 7.89997C9.13719 8.06427 9.10996 8.22825 9.05005 8.3814C8.99014 8.53456 8.89888 8.6735 8.78213 8.78931C8.66537 8.90513 8.5257 8.99526 8.37207 9.05392C8.21843 9.11259 8.05423 9.13849 7.89 9.12997ZM17.34 17.34H15V13.44C15 12.51 14.67 11.87 13.84 11.87C13.5822 11.8722 13.3313 11.9541 13.1219 12.1045C12.9124 12.2549 12.7546 12.4664 12.67 12.71C12.605 12.8926 12.5778 13.0865 12.59 13.28V17.34H10.29V10.21H12.59V11.21C12.7945 10.8343 13.0988 10.5225 13.4694 10.3089C13.84 10.0954 14.2624 9.98848 14.69 9.99997C16.2 9.99997 17.34 11 17.34 13.13V17.34Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="github-link">
+                <a href="https://github.com/ramtinattar" target="_blank">
+                    <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <title>github</title>
+                        <rect width="24" height="24" fill="none"/>
+                        <path fill="currentColor" d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="dark-mode-toggle">
+                <button id="dark-mode-toggle">
+                    <svg class="light" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 1C11 0.447715 11.4477 0 12 0C12.5523 0 13 0.447715 13 1V3C13 3.55228 12.5523 4 12 4C11.4477 4 11 3.55228 11 3V1Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12ZM8.06167 12C8.06167 14.1751 9.82492 15.9383 12 15.9383C14.1751 15.9383 15.9383 14.1751 15.9383 12C15.9383 9.82492 14.1751 8.06167 12 8.06167C9.82492 8.06167 8.06167 9.82492 8.06167 12Z" fill="currentColor"/>
+                        <path d="M20.4853 3.51472C20.0947 3.12419 19.4616 3.12419 19.0711 3.51472L17.6568 4.92893C17.2663 5.31946 17.2663 5.95262 17.6568 6.34315C18.0474 6.73367 18.6805 6.73367 19.0711 6.34315L20.4853 4.92893C20.8758 4.53841 20.8758 3.90524 20.4853 3.51472Z" fill="currentColor"/>
+                        <path d="M1 13C0.447715 13 0 12.5523 0 12C0 11.4477 0.447715 11 1 11H3C3.55228 11 4 11.4477 4 12C4 12.5523 3.55228 13 3 13H1Z" fill="currentColor"/>
+                        <path d="M3.51472 3.51472C3.1242 3.90524 3.1242 4.53841 3.51472 4.92893L4.92894 6.34315C5.31946 6.73367 5.95263 6.73367 6.34315 6.34315C6.73368 5.95262 6.73368 5.31946 6.34315 4.92893L4.92894 3.51472C4.53841 3.12419 3.90525 3.12419 3.51472 3.51472Z" fill="currentColor"/>
+                        <path d="M11 21C11 20.4477 11.4477 20 12 20C12.5523 20 13 20.4477 13 21V23C13 23.5523 12.5523 24 12 24C11.4477 24 11 23.5523 11 23V21Z" fill="currentColor"/>
+                        <path d="M6.34315 17.6569C5.95263 17.2663 5.31946 17.2663 4.92894 17.6569L3.51473 19.0711C3.1242 19.4616 3.1242 20.0948 3.51473 20.4853C3.90525 20.8758 4.53842 20.8758 4.92894 20.4853L6.34315 19.0711C6.73368 18.6805 6.73368 18.0474 6.34315 17.6569Z" fill="currentColor"/>
+                        <path d="M21 13C20.4477 13 20 12.5523 20 12C20 11.4477 20.4477 11 21 11H23C23.5523 11 24 11.4477 24 12C24 12.5523 23.5523 13 23 13H21Z" fill="currentColor"/>
+                        <path d="M17.6568 17.6569C17.2663 18.0474 17.2663 18.6805 17.6568 19.0711L19.0711 20.4853C19.4616 20.8758 20.0947 20.8758 20.4853 20.4853C20.8758 20.0948 20.8758 19.4616 20.4853 19.0711L19.0711 17.6569C18.6805 17.2663 18.0474 17.2663 17.6568 17.6569Z" fill="currentColor"/>
+                    </svg>
+                    <svg class="dark" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5739 1.11056L13.7826 2.69316C13.7632 2.73186 13.7319 2.76325 13.6932 2.7826L12.1106 3.5739C11.9631 3.64761 11.9631 3.85797 12.1106 3.93167L13.6932 4.72297C13.7319 4.74233 13.7632 4.77371 13.7826 4.81241L14.5739 6.39502C14.6476 6.54243 14.858 6.54243 14.9317 6.39502L15.723 4.81241C15.7423 4.77371 15.7737 4.74232 15.8124 4.72297L17.395 3.93167C17.5424 3.85797 17.5424 3.64761 17.395 3.5739L15.8124 2.7826C15.7737 2.76325 15.7423 2.73186 15.723 2.69316L14.9317 1.11056C14.858 0.963147 14.6476 0.963148 14.5739 1.11056Z" fill="currentColor"/>
+                        <path d="M19.2419 5.07223L18.4633 7.40815C18.4434 7.46787 18.3965 7.51474 18.3368 7.53464L16.0009 8.31328C15.8185 8.37406 15.8185 8.63198 16.0009 8.69276L18.3368 9.4714C18.3965 9.4913 18.4434 9.53817 18.4633 9.59789L19.2419 11.9338C19.3027 12.1161 19.5606 12.1161 19.6214 11.9338L20.4 9.59789C20.42 9.53817 20.4668 9.4913 20.5265 9.4714L22.8625 8.69276C23.0448 8.63198 23.0448 8.37406 22.8625 8.31328L20.5265 7.53464C20.4668 7.51474 20.42 7.46787 20.4 7.40815L19.6214 5.07223C19.5606 4.88989 19.3027 4.88989 19.2419 5.07223Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4075 13.6642C13.2348 16.4915 17.6517 16.7363 20.6641 14.3703C20.7014 14.341 20.7385 14.3113 20.7754 14.2812C20.9148 14.1674 21.051 14.0479 21.1837 13.9226C21.2376 13.8718 21.2909 13.8201 21.3436 13.7674C21.8557 13.2552 22.9064 13.5578 22.7517 14.2653C22.6983 14.5098 22.6365 14.7517 22.5667 14.9905C22.5253 15.1321 22.4811 15.2727 22.4341 15.4122C22.4213 15.4502 22.4082 15.4883 22.395 15.5262C20.8977 19.8142 16.7886 23.0003 12 23.0003C5.92487 23.0003 1 18.0754 1 12.0003C1 7.13315 4.29086 2.98258 8.66889 1.54252L8.72248 1.52504C8.8185 1.49401 8.91503 1.46428 9.01205 1.43587C9.26959 1.36046 9.5306 1.29438 9.79466 1.23801C10.5379 1.07934 10.8418 2.19074 10.3043 2.72815C10.251 2.78147 10.1987 2.83539 10.1473 2.88989C10.0456 2.99777 9.94766 3.10794 9.8535 3.22023C9.83286 3.24485 9.8124 3.26957 9.79212 3.29439C7.32966 6.30844 7.54457 10.8012 10.4075 13.6642ZM8.99331 15.0784C11.7248 17.8099 15.6724 18.6299 19.0872 17.4693C17.4281 19.6024 14.85 21.0003 12 21.0003C7.02944 21.0003 3 16.9709 3 12.0003C3 9.09163 4.45653 6.47161 6.66058 4.81846C5.41569 8.27071 6.2174 12.3025 8.99331 15.0784Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- banner -->
+        <div class="banner">
+            <div class="banner-content">
+                <h1 data-i18n="hero.title" class="banner-title">Hi, I'm Ramtin 👋</h1>
+                <p data-i18n="hero.subtitle" class="banner-subtitle">I’m a web developer building fast, scalable Shopify stores with a strong focus on performance, conversion, and clean architecture.</p>
+            </div>
+            <div class="banner-image">
+                <img src="/assets/ramtin.png" alt="ramtin-image">
+            </div>
+        </div>
+        <!-- about -->
+        <div class="about">
+            <h2 data-i18n="richtext.title" class="about-title">About Me</h2>
+            <p data-i18n="richtext.subtitle" class="about-subtitle">
+                I’m a web developer <b>based in Paris</b>, with a strong focus on Shopify and e-commerce.<br>
+                I moved to France from Iran in 2018, learned French, and studied web development before starting my professional career in 2020. Since then, I’ve worked with startups and established companies, building and maintaining scalable Shopify stores.<br>
+                I specialize in performance, clean architecture, and custom Shopify development, and I’ve contributed to over 100 e-commerce projects.<br>
+                I speak Persian, English, and French fluently.
+            </p>
+        </div>
+        <!-- experiences -->
+        <div class="experiences">
+            <h2 data-i18n="experiences.title" class="experiences-title">Work Experience</h2>
+            <div class="experiences-list">
+                <div class="experience">
+                    <div class="experience-image__container">
+                        <img class="experience-image" src="/assets/michino.png" alt="michino" />
+                    </div>
+                    <div class="experience-info__container">
+                        <div class="experience-title"><h3><a data-i18n="experiences.experience3.title" href="https://www.michinoparis.com/" target="_blank">Michino Paris</a></h3><span data-i18n="experiences.experience3.type" class="experience-type">Full-time</span></div>
+                        <div class="experience-subtitle"><span data-i18n="experiences.experience3.subtitle">Shopify Developer</span> <span data-i18n="experiences.experience3.date" class="experience-date">Feb 2026 - Present</span></div>
+                        <div class="experience-info__description">
+                            <div class="experience-info">
+                                <p data-i18n="experiences.experience3.description">
+                                    Solely responsible for the ongoing development and maintenance of three Shopify Plus stores 
+                                    for a high-end luxury brand, handling performance optimization, custom feature development, 
+                                    and internationalization across multiple markets.
+                                    <br><br>
+                                    Location: Paris, France
+                                </p>
+                            </div>
+                            <div class="read-more">
+                                <span data-i18n="experiences.readmore">Read more</span>
+                                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.46967 8.96967C6.76256 8.67678 7.23744 8.67678 7.53033 8.96967L12 13.4393L16.4697 8.96967C16.7626 8.67678 17.2374 8.67678 17.5303 8.96967C17.8232 9.26256 17.8232 9.73744 17.5303 10.0303L12.5303 15.0303C12.3897 15.171 12.1989 15.25 12 15.25C11.8011 15.25 11.6103 15.171 11.4697 15.0303L6.46967 10.0303C6.17678 9.73744 6.17678 9.26256 6.46967 8.96967Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="experience-image__container">
+                        <img class="experience-image" src="/assets/axome.png" alt="axome" />
+                    </div>
+                    <div class="experience-info__container">
+                        <div class="experience-title"><h3><a data-i18n="experiences.experience2.title" href="https://axome.com/" target="_blank">Axome</a></h3><span data-i18n="experiences.experience2.type" class="experience-type">Full-time</span></div>
+                        <p class="experience-subtitle"><span data-i18n="experiences.experience2.subtitle">Shopify Developer</span><span data-i18n="experiences.experience2.date" class="experience-date">Jun 2025 - Dec 2025</span></p>
+                        <div class="experience-info__description">
+                            <div class="experience-info">
+                                <p data-i18n="experiences.experience2.description">
+                                    Worked as a Shopify Developer within a digital agency, contributing to multiple client projects, 
+                                    driving technical decisions, and building custom Shopify solutions in collaboration with designers and project managers.
+                                    Involved in end-to-end delivery, from technical scoping to production release.
+                                    <br>
+                                    Continued working with Axome following the acquisition of Studio Zerance in  november 2022, with my contract officially transferred to Axome in june 2025.
+                                    <br><br>
+                                    Location: Paris, France / Saint-Étienne, France
+                                </p>
+                            </div>
+                            <div class="read-more">
+                                <span data-i18n="experiences.readmore">Read more</span>
+                                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.46967 8.96967C6.76256 8.67678 7.23744 8.67678 7.53033 8.96967L12 13.4393L16.4697 8.96967C16.7626 8.67678 17.2374 8.67678 17.5303 8.96967C17.8232 9.26256 17.8232 9.73744 17.5303 10.0303L12.5303 15.0303C12.3897 15.171 12.1989 15.25 12 15.25C11.8011 15.25 11.6103 15.171 11.4697 15.0303L6.46967 10.0303C6.17678 9.73744 6.17678 9.26256 6.46967 8.96967Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="experience-image__container">
+                        <img class="experience-image" src="/assets/studiozerance.png" alt="studio zerance" />
+                    </div>
+                    <div class="experience-info__container">
+                        <div class="experience-title"><h3><a data-i18n="experiences.experience1.title" href="https://www.studiozerance.com/" target="_blank">Studio Zerance</a></h3><span data-i18n="experiences.experience1.type" class="experience-type">Internship → Full-time</span></div>
+                        <p class="experience-subtitle"><span data-i18n="experiences.experience1.subtitle">Shopify Developer</span><span data-i18n="experiences.experience1.date" class="experience-date">Jun 2020 - May 2025</span></p>
+                        <div class="experience-info__description">
+                            <div class="experience-info">
+                                <p data-i18n="experiences.experience1.description">
+                                    Joined Studio Zerance as an intern and grew into a full-time Shopify Developer,
+                                    working on multiple client projects, building custom themes, 
+                                    implementing advanced Liquid features, and supporting end-to-end e-commerce builds.
+                                    <br><br>
+                                    Location: Paris, France
+                                </p>
+                            </div>
+                            <div class="read-more">
+                                <span data-i18n="experiences.readmore">Read more</span>
+                                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.46967 8.96967C6.76256 8.67678 7.23744 8.67678 7.53033 8.96967L12 13.4393L16.4697 8.96967C16.7626 8.67678 17.2374 8.67678 17.5303 8.96967C17.8232 9.26256 17.8232 9.73744 17.5303 10.0303L12.5303 15.0303C12.3897 15.171 12.1989 15.25 12 15.25C11.8011 15.25 11.6103 15.171 11.4697 15.0303L6.46967 10.0303C6.17678 9.73744 6.17678 9.26256 6.46967 8.96967Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- education -->
+         <div class="education">
+            <h2 data-i18n="education.title" class="education-title">Education</h2>
+            <div class="experiences-list">
+                <div class="experience">
+                    <div class="experience-image__container">
+                        <img class="experience-image" src="/assets/hetic.png" alt="hetic" />
+                    </div>
+                    <div class="experience-info__container">
+                        <div class="experience-title"><h3><a data-i18n="education.education3.title" href="https://www.hetic.net/" target="_blank">HETIC</a></h3><span data-i18n="education.education3.date" class="experience-date">Sep 2019 - Sep 2022</span></div>
+                        <p class="experience-subtitle" data-i18n="education.education3.subtitle">Bachelor's degree - Web development</p>
+                        <div class="experience-info__description">
+                            <div class="experience-info">
+                                <p data-i18n="education.education3.description">
+                                    Studied web development at HETIC with a broad curriculum including front-end, 
+                                    back-end, UX/UI design, cloud technologies, and game development. 
+                                    Developed a strong specialization in front-end development, 
+                                    complemented by a 3-month internship and 2 years of work-study (alternance) at Studio Zerance.
+                                    <br><br>
+                                    <b>Professional title : Digital Solutions Designer & Developer</b>
+                                    <br><br>
+                                    Location: Montreuil, France
+                                </p>
+                            </div>
+                            <div class="read-more">
+                                <span data-i18n="education.readmore">Read more</span>
+                                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.46967 8.96967C6.76256 8.67678 7.23744 8.67678 7.53033 8.96967L12 13.4393L16.4697 8.96967C16.7626 8.67678 17.2374 8.67678 17.5303 8.96967C17.8232 9.26256 17.8232 9.73744 17.5303 10.0303L12.5303 15.0303C12.3897 15.171 12.1989 15.25 12 15.25C11.8011 15.25 11.6103 15.171 11.4697 15.0303L6.46967 10.0303C6.17678 9.73744 6.17678 9.26256 6.46967 8.96967Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="experience-image__container">
+                        <img class="experience-image" src="/assets/alliance-francaise.png" alt="alliance-francaise" />
+                    </div>
+                    <div class="experience-info__container">
+                        <div class="experience-title"><h3><a data-i18n="education.education2.title" href="https://www.alliancefr.org/" target="_blank">Alliance Française</a></h3><span data-i18n="education.education2.date" class="experience-date">Aug 2018 - Mar 2019</span></div>
+                        <p class="experience-subtitle" data-i18n="education.education2.subtitle">French, A1 - B2 levels</p>
+                        <div class="experience-info__description">
+                            <div class="experience-info">
+                                <p data-i18n="education.education2.description">
+                                    Intensive French language training at Alliance Française, progressing from A1 to B2 proficiency.
+                                    <br><br>
+                                    Location: Paris, France
+                                </p>
+                            </div>
+                            <div class="read-more">
+                                <span data-i18n="education.readmore">Read more</span>
+                                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.46967 8.96967C6.76256 8.67678 7.23744 8.67678 7.53033 8.96967L12 13.4393L16.4697 8.96967C16.7626 8.67678 17.2374 8.67678 17.5303 8.96967C17.8232 9.26256 17.8232 9.73744 17.5303 10.0303L12.5303 15.0303C12.3897 15.171 12.1989 15.25 12 15.25C11.8011 15.25 11.6103 15.171 11.4697 15.0303L6.46967 10.0303C6.17678 9.73744 6.17678 9.26256 6.46967 8.96967Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="experience-image__container">
+                    </div>
+                    <div class="experience-info__container">
+                        <div class="experience-title"><h3 data-i18n="education.education1.title">Shahid Dastqeyb High School</h3><span data-i18n="education.education1.date" class="experience-date">2017</span></div>
+                        <p class="experience-subtitle" data-i18n="education.education1.subtitle">Mathematics and Physics Diploma</p>
+                        <div class="experience-info__description">
+                            <div class="experience-info">
+                                <p data-i18n="education.education1.description">
+                                    Location: Mashhad, Iran
+                                </p>
+                            </div>
+                            <div class="read-more">
+                                <span data-i18n="education.readmore">Read more</span>
+                                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.46967 8.96967C6.76256 8.67678 7.23744 8.67678 7.53033 8.96967L12 13.4393L16.4697 8.96967C16.7626 8.67678 17.2374 8.67678 17.5303 8.96967C17.8232 9.26256 17.8232 9.73744 17.5303 10.0303L12.5303 15.0303C12.3897 15.171 12.1989 15.25 12 15.25C11.8011 15.25 11.6103 15.171 11.4697 15.0303L6.46967 10.0303C6.17678 9.73744 6.17678 9.26256 6.46967 8.96967Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <!-- skills -->
+          <div class="skills">
+            <h2 class="skills-title" data-i18n="skills.title">Skills</h2>
+            <ul class="skills-list">
+                <li class="skill" data-i18n="skills.skill1">Shopify</li>
+                <li class="skill" data-i18n="skills.skill2">HTML 5</li>
+                <li class="skill" data-i18n="skills.skill3">CSS 3</li>
+                <li class="skill" data-i18n="skills.skill4">Sass</li>
+                <li class="skill" data-i18n="skills.skill5">JavaScript</li>
+                <li class="skill" data-i18n="skills.skill6">TypeScript</li>
+                <li class="skill" data-i18n="skills.skill7">React.js</li>
+                <li class="skill" data-i18n="skills.skill8">Vue.js</li>
+                <li class="skill" data-i18n="skills.skill9">jQuery</li>
+                <li class="skill" data-i18n="skills.skill10">Liquid</li>
+                <li class="skill" data-i18n="skills.skill11">SEO</li>
+                <li class="skill" data-i18n="skills.skill12">Web performance</li>
+                <li class="skill" data-i18n="skills.skill13">Git</li>
+                <li class="skill" data-i18n="skills.skill14">Figma</li>
+            </ul>
+          </div>
+          <!-- projects -->
+           <div class="projects">
+                <h2 class="projects-title" data-i18n="projects.title">Projects</h2>
+                <p class="projects-subtitle" data-i18n="projects.subtitle">I have worked on more than 100 projects. These are some of my favorites.</p>
+                <div class="projects-swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="https://franklinpetfood.com/" target="_blank">
+                                <div class="projects-slide__image">
+                                    <img src="/assets/franklin.png" />
+                                </div>
+                                <div class="projects-slide__info">
+                                    <h3 class="projects-slide__title" data-i18n="projects.project1.title">Franklin</h3>
+                                    <div class="projects-slide__description">
+                                        <p data-i18n="projects.project1.description">
+                                            Contributed to the development and evolution of a large Shopify store,
+                                            implementing new features, redesigning key UX elements such as the sidecart,
+                                            and maintaining the platform over several years in collaboration with another developer.
+                                        </p>
+                                        <span class="projects-slide__description--company">
+                                            <span data-i18n="projects.project1.company">I worked on this project at Studio Zerance</span>
+                                            <img src="/assets/studiozerance.png" alt="studio zerance" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.terre-de-bougies.com/" target="_blank">
+                                <div class="projects-slide__image">
+                                    <img src="/assets/terre-de-bougies.png" />
+                                </div>
+                                <div class="projects-slide__info">
+                                    <h3 class="projects-slide__title" data-i18n="projects.project2.title">Terre de bougies</h3>
+                                    <div class="projects-slide__description">
+                                        <p data-i18n="projects.project2.description">
+                                            Participated in the end-to-end development of a Shopify store from scratch within 
+                                            a team of three developers. Built key pages such as the product page and 
+                                            implemented custom features, including a calculator to support complex user flows.
+                                        </p>
+                                        <span class="projects-slide__description--company">
+                                            <span data-i18n="projects.project2.company">I worked on this project at Axome</span>
+                                            <img src="/assets/axome.png" alt="axome" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.inlissa.com/" target="_blank">
+                                <div class="projects-slide__image">
+                                    <img src="/assets/inlissa.png" />
+                                </div>
+                                <div class="projects-slide__info">
+                                    <h3 class="projects-slide__title" data-i18n="projects.project3.title">Inlissa</h3>
+                                    <div class="projects-slide__description">
+                                        <p data-i18n="projects.project3.description">
+                                            Solely responsible for customizing and extending a pre-built Shopify theme,
+                                            reworking existing sections and developing new custom sections such as an advanced
+                                            “Ingredients” block on the product page, with a strong focus on web performance.
+                                        </p>
+                                        <span class="projects-slide__description--company">
+                                            <span data-i18n="projects.project3.company">I worked on this project at Studio Zerance</span>
+                                            <img src="/assets/studiozerance.png" alt="studio zerance" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://novoma.com/" target="_blank">
+                                <div class="projects-slide__image">
+                                    <img src="/assets/novoma.png" />
+                                </div>
+                                <div class="projects-slide__info">
+                                    <h3 class="projects-slide__title" data-i18n="projects.project4.title">Novoma</h3>
+                                    <div class="projects-slide__description">
+                                        <p data-i18n="projects.project4.description">
+                                            Contributed to the development of a complex in-house Shopify theme alongside another 
+                                            developer. Took ownership of key pages, including the homepage, and participated in 
+                                            the overall architecture and implementation.
+                                        </p>
+                                        <span class="projects-slide__description--company">
+                                            <span data-i18n="projects.project4.company">I worked on this project at Axome</span>
+                                            <img src="/assets/axome.png" alt="axome" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.lalchimiste.paris/" target="_blank">
+                                <div class="projects-slide__image">
+                                    <img src="/assets/lalchimiste.png" />
+                                </div>
+                                <div class="projects-slide__info">
+                                    <h3 class="projects-slide__title" data-i18n="projects.project5.title">l'Alchimiste</h3>
+                                    <div class="projects-slide__description">
+                                        <p data-i18n="projects.project5.description">
+                                            Solely responsible for customizing and extending a pre-built Shopify theme.
+                                            Reworked existing sections and developed custom features, including product 
+                                            suggestions in the sidecart, to improve UX and conversion.
+                                        </p>
+                                        <span class="projects-slide__description--company">
+                                            <span data-i18n="projects.project5.company">I worked on this project at Studio Zerance</span>
+                                            <img src="/assets/studiozerance.png" alt="studio zerance" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://plaqchocolat.com/" target="_blank">
+                                <div class="projects-slide__image">
+                                    <img src="/assets/plaq.png" />
+                                </div>
+                                <div class="projects-slide__info">
+                                    <h3 class="projects-slide__title" data-i18n="projects.project6.title">Plaq</h3>
+                                    <div class="projects-slide__description">
+                                        <p data-i18n="projects.project6.description">
+                                            Joined the project in the middle of the development and contributed to multiple pages and sections.
+                                            Implemented custom features such as gift suggestions in the sidecart and the 
+                                            test page to guide customers toward the right product.
+                                        </p>
+                                        <span class="projects-slide__description--company">
+                                            <span data-i18n="projects.project6.company">I worked on this project at Studio Zerance</span>
+                                            <img src="/assets/studiozerance.png" alt="studio zerance" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://cairn-sport.com/" target="_blank">
+                                <div class="projects-slide__image">
+                                    <img src="/assets/cairn.png" />
+                                </div>
+                                <div class="projects-slide__info">
+                                    <h3 class="projects-slide__title" data-i18n="projects.project7.title">Cairn</h3>
+                                    <div class="projects-slide__description">
+                                        <p data-i18n="projects.project7.description">
+                                            Built a Shopify store from scratch independently by duplicating an existing project (on which I also worked on).
+                                            Adapted the structure, components, and styling to fully match new brand guidelines 
+                                            and functional requirements.
+                                        </p>
+                                        <span class="projects-slide__description--company">
+                                            <span data-i18n="projects.project7.company">I worked on this project at Axome</span>
+                                            <img src="/assets/axome.png" alt="axome" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+           </div>
+    </main>
+    <footer class="footer">
+        <h2 class="contact-title" data-i18n="contact.title">Contact Me</h2>
+        <p class="contact-description" data-i18n="contact.description">
+            Want to get in touch ?<br>
+            Just send me an <a href="mailto:ramtinattar13@gmail.com" target="_blank">e-mail</a> 
+            or dm me on <a href="https://www.linkedin.com/in/ramtin-attar/" target="_blank">LinkedIn</a> 
+            and I'll write you back asap 🙂
+        </p>
+    </footer>
+</body>
+</html>
