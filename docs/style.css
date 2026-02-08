@@ -74,7 +74,7 @@ main {
     margin-top: 20px;
     position: fixed;
     z-index: 999;
-    top: 0;
+    top: env(safe-area-inset-top);
     left: 50%;
     transform: translateX(-50%);
 }
