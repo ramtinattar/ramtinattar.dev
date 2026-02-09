@@ -1,11 +1,11 @@
 {
   "hero": {
     "title": "Hi, I'm Ramtin 👋",
-    "subtitle": "I'm a web developer building fast, scalable Shopify stores with a strong focus on performance, conversion, and clean architecture."
+    "subtitle": "I’m a web developer specializing in Shopify."
   },
   "richtext": {
     "title": "About Me",
-    "subtitle": "I'm a web developer <b>based in Paris</b>, with a strong focus on Shopify and e-commerce.<br>I moved to France from Iran in 2018, learned French, and studied web development before starting my professional career in 2020. Since then, I've worked with startups and established companies, building and maintaining scalable Shopify stores.<br>I specialize in performance, clean architecture, and custom Shopify development, and I've contributed to over 100 e-commerce projects.<br>I speak Persian, English, and French fluently."
+    "subtitle": "I’m a web developer <b>based in Paris</b>, with a strong focus on Shopify and e-commerce.<br>Since starting my professional career in 2020, I’ve been coding and building production-ready projects.<br>Over the years, I’ve worked with multiple companies, building and maintaining more than 100 websites.<br>I speak Persian, English, and French fluently."
   },
   "experiences": {
     "title": "Work Experience",

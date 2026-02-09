@@ -194,10 +194,12 @@ main {
 .banner-title {
     font-size: 50px;
     margin: 0;
+    text-wrap: pretty;
 }
 
 .banner-subtitle {
     font-size: 20px;
+    text-wrap: pretty;
 }
 
 .banner-image {
@@ -218,12 +220,14 @@ main {
     .banner-title {
         font-size: 35px;
         line-height: 35px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
+}
 
-    .banner-subtitle {
-        font-size: 16px;
-    }
+/* about */
+
+.about-subtitle {
+    text-wrap: pretty;
 }
 
 /* experiences */
@@ -318,19 +322,11 @@ main {
 
 @media screen and (max-width: 700px) {
     .experience > * {
-        font-size: 13px;
-    }
-
-    .experience-info p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .experience {
         gap: 13px;
-    }
-
-    .experience-title h3 {
-        font-size: 15px;
     }
 }
 
@@ -352,6 +348,12 @@ main {
     padding: 5px 10px;
     border-radius: 8px;
     border: 2px solid var(--border);
+}
+
+@media screen and (min-width: 701px) {
+    .skill:hover {
+        opacity: .8;
+    }
 }
 
 @media screen and (max-width: 700px) {

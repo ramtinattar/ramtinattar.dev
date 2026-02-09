@@ -31,6 +31,7 @@ async function translatePage(lang) {
   const translations = await loadTranslations(lang);
   currentTranslations = translations;
   applyTranslations(translations);
+  syncAccordionLabels();
   localStorage.setItem('lang', lang);
 
   // Update language button states
@@ -59,6 +60,17 @@ function getReadMoreLabel() {
   };
 }
 
+function syncAccordionLabels() {
+  const getReadLess = getReadLessLabel();
+  const getReadMore = getReadMoreLabel();
+  document.querySelectorAll('.experience-info__container').forEach((container) => {
+    const content = container.querySelector('.experience-info');
+    const span = container.querySelector('.experience-info__description .read-more span');
+    if (!content || !span) return;
+    span.textContent = content.classList.contains('open') ? getReadLess(span) : getReadMore(span);
+  });
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   // Load initial language and apply translations
   await translatePage(currentLang);
@@ -74,9 +86,20 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Dark mode
   const darkModeToggle = document.getElementById('dark-mode-toggle');
+  const savedTheme = localStorage.getItem('theme');
+
+  if (savedTheme === 'dark') {
+    document.documentElement.classList.add('dark');
+    darkModeToggle?.classList.add('active');
+  } else if (savedTheme === 'light') {
+    document.documentElement.classList.remove('dark');
+    darkModeToggle?.classList.remove('active');
+  }
+
   darkModeToggle?.addEventListener('click', function () {
-    document.documentElement.classList.toggle('dark');
+    const isDark = document.documentElement.classList.toggle('dark');
     darkModeToggle.classList.toggle('active');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
   });
 
   // Accordion (Read more / Read less) – uses current language
