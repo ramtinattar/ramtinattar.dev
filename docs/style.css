@@ -78,7 +78,33 @@ main {
     transform: translateX(-50%);
 }
 
-.header::after {
+.header-blur {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100px;
+    background: linear-gradient(
+    to bottom,
+    var(--header-bg-1),
+    var(--header-bg-2),
+    var(--header-bg-3)
+    );
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,1) 65%,
+    rgba(0,0,0,0.5) 85%,
+    rgba(0,0,0,0) 100%
+    );
+    pointer-events: none;
+    z-index: 998;
+}
+
+/* .header::after {
     content: '';
     display: block;
     width: 100vw;
@@ -113,7 +139,7 @@ main {
       rgba(0, 0, 0, 0.4) 85%,
       rgba(0, 0, 0, 0) 100%
     );
-  }
+} */
   
 
 .navbar {
