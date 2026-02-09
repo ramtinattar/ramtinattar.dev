@@ -116,13 +116,14 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     spaceBetween: 10,
     centeredSlides: true,
+    autoHeight: true,
     autoplay: {
       delay: 3000,
     },
     breakpoints: {
       701: {
         slidesPerView: 1.7,
-        spaceBetween: 10,
+        autoHeight: false,
       },
     },
     pagination: {
