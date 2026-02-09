@@ -84,7 +84,7 @@ main {
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;
-    height: 100px;
+    height: 76px;
     background: linear-gradient(
     to bottom,
     var(--header-bg-1),
