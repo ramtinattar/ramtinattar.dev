@@ -118,15 +118,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       const isOpen = content.classList.contains('open');
 
       if (isOpen) {
-        content.style.height = '0';
-        content.style.visibility = 'hidden';
+        content.style.maxHeight = '0px';
         content.classList.remove('open');
         span.textContent = getReadMore(span);
         if (arrow) arrow.style.transform = 'rotate(0deg)';
       } else {
-        content.style.height = content.scrollHeight + 'px';
-        content.style.visibility = 'visible';
         content.classList.add('open');
+        content.style.maxHeight = content.scrollHeight + 'px';
         span.textContent = getReadLess(span);
         if (arrow) arrow.style.transform = 'rotate(180deg)';
       }

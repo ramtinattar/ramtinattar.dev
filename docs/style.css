@@ -282,11 +282,15 @@ main {
 
 .experience-info {
     font-size: 14px;
-    display: block;
-    height: 0;
     overflow: hidden;
-    visibility: hidden;
-    transition: height 0.4s ease, opacity 0.2s ease;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.2s ease;
+    will-change: max-height, opacity;
+  }
+  
+.experience-info.open {
+    opacity: 1;
 }
 
 .experience-info p {
