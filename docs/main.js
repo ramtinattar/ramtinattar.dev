@@ -138,8 +138,10 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 10,
     centeredSlides: true,
     autoHeight: true,
-    autoplay: {
+    autoplay: { 
       delay: 3000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: true,
     },
     breakpoints: {
       701: {
