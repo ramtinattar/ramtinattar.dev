@@ -504,4 +504,8 @@ html.dark .projects-swiper .swiper-slide {
         padding: 25px;
         min-height: 230px;
     }
+
+    .contact-description a:hover {
+        opacity: .8;
+    }
 }
