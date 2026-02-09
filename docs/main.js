@@ -141,12 +141,18 @@ const swiper = new Swiper('.swiper', {
     autoplay: { 
       delay: 3000,
       pauseOnMouseEnter: true,
-      disableOnInteraction: true,
     },
     breakpoints: {
+      0: {
+        autoplay: false,
+      },
       701: {
         slidesPerView: 1.7,
         autoHeight: false,
+        autoplay: { 
+          delay: 3000,
+          pauseOnMouseEnter: true,
+        },
       },
     },
     pagination: {
