@@ -80,11 +80,11 @@ main {
 
 .header-blur {
     position: fixed;
-    top: 0px;
+    top: -50px;
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;
-    height: 76px;
+    height: 126px;
     background: linear-gradient(
     to bottom,
     var(--header-bg-1),
