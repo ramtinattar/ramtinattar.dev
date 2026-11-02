@@ -3,7 +3,8 @@
     "work": "Work",
     "about": "About",
     "contact": "Contact",
-    "menu": "Open menu"
+    "menu": "Open menu",
+    "close": "Close menu"
   },
   "hero": {
     "statement": "Shopify developer in Paris, building stores for brands that care about the details.",

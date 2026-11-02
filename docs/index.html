@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=SN+Pro:wght@300..700&family=Vazirmatn:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=6">
-    <script src="main.js?v=6" defer></script>
+    <link rel="stylesheet" href="style.css?v=7">
+    <script src="main.js?v=7" defer></script>
 </head>
 <body>
     <header class="header">
@@ -23,10 +23,12 @@
             </div>
             <button class="nav-language" id="language-toggle" type="button" aria-label="Passer en français"><span class="current" data-language="en">EN</span> / <span data-language="fr">FR</span></button>
             <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
-                <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 9h16M4 15h16"></path></svg>
+                <span class="nav-toggle-line" aria-hidden="true"></span>
+                <span class="nav-toggle-line" aria-hidden="true"></span>
             </button>
         </nav>
     </header>
+    <div class="nav-overlay" id="nav-overlay"></div>
     <main>
         <!-- hero -->
         <section class="hero" id="top">

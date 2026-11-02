@@ -1,5 +1,6 @@
 // Translations
 let currentLang = localStorage.getItem('lang') || 'en';
+let currentTranslations = null;
 
 async function loadTranslations(lang) {
   const res = await fetch(new URL(`i18n/${lang}.json`, window.location.href).href);
@@ -26,9 +27,16 @@ function applyTranslations(translations) {
   document.querySelector('meta[name="description"]').content = translations.hero.statement;
 }
 
+function updateMenuLabel() {
+  const toggle = document.getElementById('nav-toggle');
+  const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+  toggle.setAttribute('aria-label', isOpen ? currentTranslations.nav.close : currentTranslations.nav.menu);
+}
+
 async function translatePage(lang) {
   currentLang = lang;
   const translations = await loadTranslations(lang);
+  currentTranslations = translations;
   applyTranslations(translations);
   localStorage.setItem('lang', lang);
 
@@ -39,8 +47,7 @@ async function translatePage(lang) {
   });
   languageToggle.setAttribute('aria-label', lang === 'en' ? 'Passer en français' : 'Switch to English');
 
-  const toggle = document.getElementById('nav-toggle');
-  toggle.setAttribute('aria-label', translations.nav.menu);
+  updateMenuLabel();
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -55,10 +62,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Mobile menu
   const navToggle = document.getElementById('nav-toggle');
   const navLinks = document.getElementById('nav-links');
+  const navOverlay = document.getElementById('nav-overlay');
+  const header = document.querySelector('.header');
 
   const setMenuOpen = (isOpen) => {
     navLinks.classList.toggle('open', isOpen);
+    navOverlay.classList.toggle('open', isOpen);
+    header.classList.toggle('menu-open', isOpen);
+    document.body.classList.toggle('menu-open', isOpen);
     navToggle.setAttribute('aria-expanded', String(isOpen));
+    updateMenuLabel();
   };
 
   navToggle.addEventListener('click', () => {
@@ -68,4 +81,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   navLinks.addEventListener('click', (e) => {
     if (e.target.closest('a')) setMenuOpen(false);
   });
+
+  navOverlay.addEventListener('click', () => setMenuOpen(false));
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setMenuOpen(false);
+  });
+
+  window.matchMedia('(min-width: 861px)').addEventListener('change', () => setMenuOpen(false));
 });
