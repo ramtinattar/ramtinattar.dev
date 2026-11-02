@@ -1,124 +1,51 @@
 {
+  "nav": {
+    "work": "Projets",
+    "about": "À propos",
+    "contact": "Contact",
+    "menu": "Ouvrir le menu"
+  },
   "hero": {
-    "title": "Salut, je suis Ramtin 👋",
-    "subtitle": "Je suis développeur web spécialisé Shopify."
-  },
-  "richtext": {
-    "title": "À propos",
-    "subtitle": "Je suis développeur web <b>basé à Paris</b>, avec une forte spécialisation en Shopify et e-commerce.<br>Depuis le début de ma carrière professionnelle en 2020, je conçois et développe des projets prêts pour la production.<br>Au fil des années, j’ai collaboré avec plusieurs entreprises, en développant et en maintenant plus de 100 sites internet.<br>Je parle couramment le persan, l’anglais et le français."
-  },
-  "experiences": {
-    "title": "Expérience professionnelle",
-    "readmore": "Lire la suite",
-    "readless": "Lire moins",
-    "experience1": {
-      "title": "Studio Zerance",
-      "type": "Stage → CDI",
-      "subtitle": "Développeur Shopify",
-      "date": "Juin 2020 - Mai 2025",
-      "description": "J’ai rejoint Studio Zerance en stage, poursuivi en alternance, puis suis devenu développeur Shopify à temps plein, travaillant sur plusieurs projets clients, créant des thèmes sur mesure, mettant en œuvre des fonctionnalités Liquid avancées et accompagnant des projets e-commerce de bout en bout.<br><br>Lieu : Paris, France"
-    },
-    "experience2": {
-      "title": "Axome",
-      "type": "CDI",
-      "subtitle": "Développeur Shopify",
-      "date": "Juin 2025 - Déc 2025",
-      "description": "Développeur Shopify au sein d'une agence digitale, contribution à plusieurs projets clients, prise de décisions techniques et construction de solutions Shopify sur mesure en collaboration avec les designers et chefs de projet. Impliqué dans la livraison de bout en bout, du cadrage technique à la mise en production.<br>J’ai poursuivi ma collaboration avec Axome après le rachat de Studio Zerance en novembre 2022, avec un transfert officiel de mon contrat en juin 2025.<br><br>Lieu : Paris, France / Saint-Étienne, France"
-    },
-    "experience3": {
-      "title": "Michino Paris",
-      "type": "CDI",
-      "subtitle": "Développeur Shopify",
-      "date": "Mars 2026 - Présent",
-      "description": "Responsable du développement continu et de la maintenance de trois boutiques Shopify Plus pour une marque de luxe, avec optimisation des performances, développement de fonctionnalités sur mesure et internationalisation sur plusieurs marchés.<br><br>Lieu : Paris, France"
-    }
-  },
-  "education": {
-    "title": "Formation",
-    "readmore": "Lire la suite",
-    "readless": "Lire moins",
-    "education1": {
-      "title": "Lycée Shahid Dastqeyb",
-      "date": "2017",
-      "subtitle": "Baccalauréat Mathématiques et Physique",
-      "description": "Lieu : Mashhad, Iran"
-    },
-    "education2": {
-      "title": "Alliance Française",
-      "date": "Août 2018 - Mars 2019",
-      "subtitle": "Le français, niveaux A1 - B2",
-      "description": "Formation intensive en français à l'Alliance Française, progression du niveau A1 au B2.<br><br>Lieu : Paris, France"
-    },
-    "education3": {
-      "title": "HETIC",
-      "date": "Sep 2019 - Sep 2022",
-      "subtitle": "Bac+3 - Développement web",
-      "description": "Études en développement web à HETIC, avec un programme couvrant le front-end, le back-end, le design UX/UI, les technologies cloud et le développement de jeux. Spécialisation marquée en développement front-end, complétée par un stage de 3 mois et 2 ans en alternance chez Studio Zerance.<br><br><b>Titre professionnel : Concepteur développeur de solutions digitales</b><br><br>Lieu : Montreuil, France"
-    }
-  },
-  "skills": {
-    "title": "Compétences",
-    "skill1": "Shopify",
-    "skill2": "HTML 5",
-    "skill3": "CSS 3",
-    "skill4": "Sass",
-    "skill5": "JavaScript",
-    "skill6": "TypeScript",
-    "skill7": "React.js",
-    "skill8": "Vue.js",
-    "skill9": "jQuery",
-    "skill10": "Liquid",
-    "skill11": "SEO",
-    "skill12": "Optimisation des performances",
-    "skill13": "Git",
-    "skill14": "Figma"
+    "statement": "Développeur Shopify à Paris, je crée des boutiques pour les marques qui soignent les détails.",
+    "websitesLabel": "Sites réalisés",
+    "websitesValue": "Plus de 100",
+    "codingLabel": "Développeur professionnel",
+    "codingValue": "Depuis 2020",
+    "nowLabel": "Actuellement"
   },
   "projects": {
-    "title": "Projets",
-    "subtitle": "J'ai travaillé sur plus de 100 projets. Voici quelques-uns de mes préférés.",
-    "project1": {
-      "title": "Franklin",
-      "description": "Contribution au développement et à l'évolution d'une grande boutique Shopify+ : nouvelles fonctionnalités, refonte d'éléments UX clés comme le panier latéral, et maintenance de la plateforme sur plusieurs années en collaboration avec un autre développeur.",
-      "company": "J'ai travaillé sur ce projet chez Studio Zerance"
+    "visit": "Visiter la boutique ↗",
+    "zerance": "Chez Studio Zerance",
+    "axome": "Chez Axome",
+    "michino": {
+      "company": "En interne chez Michino Paris",
+      "description": "Je développe de nouvelles fonctionnalités et j’améliore la boutique au quotidien en tant que développeur interne de la marque."
     },
-    "project2": {
-      "title": "Terre de bougies",
-      "description": "Participation au développement de bout en bout d'une boutique Shopify+ au sein d'une équipe de trois développeurs. Construction des pages clés, dont la fiche produit, et mise en place de fonctionnalités sur mesure comme un calculateur dédié.",
-      "company": "J'ai travaillé sur ce projet chez Axome"
-    },
-    "project3": {
-      "title": "Inlissa",
-      "description": "Responsable de la personnalisation et de l'extension d'un thème Shopify. Refonte des sections existantes et développement de nouvelles sections sur mesure, dont un bloc \"Ingrédients\" avancé sur la fiche produit, avec un fort focus sur la performance web.",
-      "company": "J'ai travaillé sur ce projet chez Studio Zerance"
-    },
-    "project4": {
-      "title": "Novoma",
-      "description": "Contribution au développement d'un thème Shopify interne complexe avec un autre développeur. Prise en charge de pages clés, dont la page d'accueil, et participation à l'architecture, à la mise en œuvre globale et à l'évolution du thème.",
-      "company": "J'ai travaillé sur ce projet chez Axome"
-    },
-    "project5": {
-      "title": "Faure Le Page",
-      "description": "Participation au développement et à la personnalisation de la boutique Shopify de Faure Le Page, prestigieuse maison française de luxe. Travail sur l’implémentation de sections et fonctionnalités sur mesure, tout en garantissant une expérience utilisateur raffinée et haut de gamme, en accord avec l’identité de la marque.",
-      "company": "J'ai travaillé sur ce projet chez Studio Zerance"
-    },
-    "project6": {
-      "title": "Plaq",
-      "description": "Rejoint le projet en cours de développement et contribution à plusieurs pages et sections. Mise en place de fonctionnalités sur mesure : suggestions de cadeaux dans le panier latéral et page de test pour orienter les clients vers le bon produit.",
-      "company": "J'ai travaillé sur ce projet chez Studio Zerance"
-    },
-    "project7": {
-      "title": "Cairn",
-      "description": "Construction d'une boutique Shopify from scratch en autonomie en dupliquant un projet existant (sur lequel j'avais également travaillé). Adaptation de la structure, des composants et du style pour respecter les nouvelles chartes et exigences fonctionnelles.",
-      "company": "J'ai travaillé sur ce projet chez Axome"
-    },
-    "project8": {
-      "title": "Michino Paris",
-      "description": "Responsable du développement et de la maintenance continue d’une boutique Shopify en tant que développeur interne. Travail quotidien sur l’implémentation de nouvelles fonctionnalités, l’amélioration des composants existants et l’évolution continue de la plateforme.",
-      "company": "J'ai travaillé sur ce projet chez Michino Paris"
-    }
+    "faureLePage": "Sections et fonctionnalités sur mesure pour une prestigieuse maison française de luxe.",
+    "plaq": "Suggestions de cadeaux dans le panier latéral et page de test pour orienter les clients vers le bon produit.",
+    "novoma": "Un thème interne complexe. J’ai pris en charge des pages clés, dont la page d’accueil, et participé à l’architecture.",
+    "terreDeBougies": "Construite de zéro au sein d’une équipe de trois, avec la fiche produit et un calculateur sur mesure.",
+    "franklin": "Une grande boutique que j’ai fait évoluer pendant plusieurs années, avec notamment la refonte du panier latéral.",
+    "inlissa": "Des sections sur mesure comme un bloc Ingrédients avancé, avec un fort accent sur la performance web.",
+    "cairn": "Une boutique réalisée en autonomie, adaptée à de nouvelles chartes et exigences fonctionnelles.",
+    "more": "Et bien <em>d’autres.</em>"
+  },
+  "about": {
+    "text": "J’ai commencé en stage en 2020 et je travaille sur Shopify depuis, d’abord en agence et aujourd’hui en interne pour une marque de luxe. Je parle couramment le persan, l’anglais et le français.",
+    "experience": "Expérience",
+    "michino": "Michino Paris, Développeur Shopify",
+    "michinoDate": "Mars 2026 - Présent",
+    "axome": "Axome, Développeur Shopify",
+    "axomeDate": "Juin 2025 - Déc 2025",
+    "zerance": "Studio Zerance, Développeur Shopify",
+    "zeranceDate": "Juin 2020 - Mai 2025",
+    "education": "Formation",
+    "hetic": "HETIC, Bac+3 en développement web",
+    "alliance": "Alliance Française, français A1 à B2",
+    "skills": "Compétences",
+    "skillsList": "Shopify, Liquid, JavaScript, TypeScript, React.js, Vue.js, jQuery, HTML 5, CSS 3, Sass, SEO, performance web, développement assisté par l’IA, Git, Figma"
   },
   "contact": {
-    "title": "Me contacter",
-    "description": "Envie d'échanger ?<br>Envoie-moi un <a href=\"mailto:ramtinattar13@gmail.com\" target=\"_blank\">e-mail</a> ou un message sur <a href=\"https://www.linkedin.com/in/ramtin-attar/\" target=\"_blank\">LinkedIn</a> et je te répondrai asap 🙂"
+    "title": "Vous avez une boutique en tête ?"
   }
 }

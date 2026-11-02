@@ -1,124 +1,51 @@
 {
+  "nav": {
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact",
+    "menu": "Open menu"
+  },
   "hero": {
-    "title": "Hi, I'm Ramtin 👋",
-    "subtitle": "I’m a web developer specializing in Shopify."
-  },
-  "richtext": {
-    "title": "About Me",
-    "subtitle": "I’m a web developer <b>based in Paris</b>, with a strong focus on Shopify and e-commerce.<br>Since starting my professional career in 2020, I’ve been coding and building production-ready projects.<br>Over the years, I’ve worked with multiple companies, building and maintaining more than 100 websites.<br>I speak Persian, English, and French fluently."
-  },
-  "experiences": {
-    "title": "Work Experience",
-    "readmore": "Read more",
-    "readless": "Read less",
-    "experience1": {
-      "title": "Studio Zerance",
-      "type": "Internship → Full-time",
-      "subtitle": "Shopify Developer",
-      "date": "Jun 2020 - May 2025",
-      "description": "Joined Studio Zerance as an intern, continued as a work-study student, and grew into a full-time Shopify Developer, working on multiple client projects, building custom themes, implementing advanced Liquid features, and supporting end-to-end e-commerce builds.<br><br>Location: Paris, France"
-    },
-    "experience2": {
-      "title": "Axome",
-      "type": "Full-time",
-      "subtitle": "Shopify Developer",
-      "date": "Jun 2025 - Dec 2025",
-      "description": "Worked as a Shopify Developer within a digital agency, contributing to multiple client projects, driving technical decisions, and building custom Shopify solutions in collaboration with designers and project managers. Involved in end-to-end delivery, from technical scoping to production release.<br>Continued working with Axome following the acquisition of Studio Zerance in november 2022, with my contract officially transferred to Axome in june 2025.<br><br>Location: Paris, France / Saint-Étienne, France"
-    },
-    "experience3": {
-      "title": "Michino Paris",
-      "type": "Full-time",
-      "subtitle": "Shopify Developer",
-      "date": "Mar 2026 - Present",
-      "description": "Solely responsible for the ongoing development and maintenance of three Shopify Plus stores for a high-end luxury brand, handling performance optimization, custom feature development, and internationalization across multiple markets.<br><br>Location: Paris, France"
-    }
-  },
-  "education": {
-    "title": "Education",
-    "readmore": "Read more",
-    "readless": "Read less",
-    "education1": {
-      "title": "Shahid Dastqeyb High School",
-      "date": "2017",
-      "subtitle": "Mathematics and Physics Diploma",
-      "description": "Location: Mashhad, Iran"
-    },
-    "education2": {
-      "title": "Alliance Française",
-      "date": "Aug 2018 - Mar 2019",
-      "subtitle": "French, A1 - B2 levels",
-      "description": "Intensive French language training at Alliance Française, progressing from A1 to B2 proficiency.<br><br>Location: Paris, France"
-    },
-    "education3": {
-      "title": "HETIC",
-      "date": "Sep 2019 - Sep 2022",
-      "subtitle": "Bachelor's degree - Web development",
-      "description": "Studied web development at HETIC with a broad curriculum including front-end, back-end, UX/UI design, cloud technologies, and game development. Developed a strong specialization in front-end development, complemented by a 3-month internship and 2 years of work-study at Studio Zerance.<br><br><b>Professional title : Digital Solutions Designer & Developer</b><br><br>Location: Montreuil, France"
-    }
-  },
-  "skills": {
-    "title": "Skills",
-    "skill1": "Shopify",
-    "skill2": "HTML 5",
-    "skill3": "CSS 3",
-    "skill4": "Sass",
-    "skill5": "JavaScript",
-    "skill6": "TypeScript",
-    "skill7": "React.js",
-    "skill8": "Vue.js",
-    "skill9": "jQuery",
-    "skill10": "Liquid",
-    "skill11": "SEO",
-    "skill12": "Web performance",
-    "skill13": "Git",
-    "skill14": "Figma"
+    "statement": "Shopify developer in Paris, building stores for brands that care about the details.",
+    "websitesLabel": "Websites built",
+    "websitesValue": "More than 100",
+    "codingLabel": "Coding professionally",
+    "codingValue": "Since 2020",
+    "nowLabel": "Now"
   },
   "projects": {
-    "title": "Projects",
-    "subtitle": "I have worked on more than 100 projects. These are some of my favorites.",
-    "project1": {
-      "title": "Franklin",
-      "description": "Contributed to the development and evolution of a large Shopify store, implementing new features, redesigning key UX elements such as the sidecart, and maintaining the platform over several years in collaboration with another developer.",
-      "company": "I worked on this project at Studio Zerance"
+    "visit": "Visit the store ↗",
+    "zerance": "At Studio Zerance",
+    "axome": "At Axome",
+    "michino": {
+      "company": "In-house at Michino Paris",
+      "description": "I build new features and improve the store every day as the brand’s in-house developer."
     },
-    "project2": {
-      "title": "Terre de bougies",
-      "description": "Participated in the end-to-end development of a Shopify store from scratch within a team of three developers. Built key pages such as the product page and implemented custom features, including a calculator to support complex user flows.",
-      "company": "I worked on this project at Axome"
-    },
-    "project3": {
-      "title": "Inlissa",
-      "description": "Solely responsible for customizing and extending a pre-built Shopify theme, reworking existing sections and developing new custom sections such as an advanced \"Ingredients\" block on the product page, with a strong focus on web performance.",
-      "company": "I worked on this project at Studio Zerance"
-    },
-    "project4": {
-      "title": "Novoma",
-      "description": "Contributed to the development of a complex in-house Shopify theme alongside another developer. Took ownership of key pages, including the homepage, and participated in the overall architecture and implementation.",
-      "company": "I worked on this project at Axome"
-    },
-    "project5": {
-      "title": "Faure Le Page",
-      "description": "Contributed to the development and customization of the Shopify storefront for Faure Le Page, a prestigious French luxury house. Worked on implementing custom sections and features while ensuring a refined, high-end user experience aligned with the brand’s identity.",
-      "company": "I worked on this project at Studio Zerance"
-    },
-    "project6": {
-      "title": "Plaq",
-      "description": "Joined the project in the middle of the development and contributed to multiple pages and sections. Implemented custom features such as gift suggestions in the sidecart and the test page to guide customers toward the right product.",
-      "company": "I worked on this project at Studio Zerance"
-    },
-    "project7": {
-      "title": "Cairn",
-      "description": "Built a Shopify store from scratch independently by duplicating an existing project (on which I also worked on). Adapted the structure, components, and styling to fully match new brand guidelines and functional requirements.",
-      "company": "I worked on this project at Axome"
-    },
-    "project8": {
-      "title": "Michino Paris",
-      "description": "Solely responsible for the ongoing development and maintenance of this Shopify+ store as the in-house developer. Worked daily on implementing new features, improving existing components, and supporting continuous platform evolution.",
-      "company": "I worked on this project at Michino Paris"
-    }
+    "faureLePage": "Custom sections and features for a prestigious French luxury house.",
+    "plaq": "Gift suggestions in the sidecart and a test page that guides customers to the right product.",
+    "novoma": "A complex in-house theme. I took ownership of key pages, including the homepage, and worked on the architecture.",
+    "terreDeBougies": "Built from scratch in a team of three, including the product page and a custom calculator.",
+    "franklin": "A large store I helped evolve over several years, including a redesign of the sidecart.",
+    "inlissa": "Custom sections such as an advanced Ingredients block, with a strong focus on web performance.",
+    "cairn": "A store I built on my own, adapted to new brand guidelines and functional requirements.",
+    "more": "And many <em>more.</em>"
+  },
+  "about": {
+    "text": "I started as an intern in 2020 and have worked on Shopify ever since, first in agencies and now in-house at a luxury brand. I speak Persian, English and French fluently.",
+    "experience": "Experience",
+    "michino": "Michino Paris, Shopify Developer",
+    "michinoDate": "Mar 2026 - Present",
+    "axome": "Axome, Shopify Developer",
+    "axomeDate": "Jun 2025 - Dec 2025",
+    "zerance": "Studio Zerance, Shopify Developer",
+    "zeranceDate": "Jun 2020 - May 2025",
+    "education": "Education",
+    "hetic": "HETIC, Bachelor’s in web development",
+    "alliance": "Alliance Française, French A1 to B2",
+    "skills": "Skills",
+    "skillsList": "Shopify, Liquid, JavaScript, TypeScript, React.js, Vue.js, jQuery, HTML 5, CSS 3, Sass, SEO, web performance, AI-assisted development, Git, Figma"
   },
   "contact": {
-    "title": "Contact Me",
-    "description": "Want to get in touch ?<br>Just send me an <a href=\"mailto:ramtinattar13@gmail.com\" target=\"_blank\">e-mail</a> or dm me on <a href=\"https://www.linkedin.com/in/ramtin-attar/\" target=\"_blank\">LinkedIn</a> and I'll write you back asap 🙂"
+    "title": "Have a store in mind?"
   }
 }

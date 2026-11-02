@@ -1,6 +1,5 @@
 // Translations
 let currentLang = localStorage.getItem('lang') || 'en';
-let currentTranslations = {};
 
 async function loadTranslations(lang) {
   const res = await fetch(new URL(`i18n/${lang}.json`, window.location.href).href);
@@ -24,51 +23,22 @@ function applyTranslations(translations) {
     }
   });
   document.documentElement.lang = currentLang;
+  document.querySelector('meta[name="description"]').content = translations.hero.statement;
 }
 
 async function translatePage(lang) {
   currentLang = lang;
   const translations = await loadTranslations(lang);
-  currentTranslations = translations;
   applyTranslations(translations);
-  syncAccordionLabels();
   localStorage.setItem('lang', lang);
 
   // Update language button states
   document.querySelectorAll('[data-language]').forEach((btn) => {
     btn.classList.toggle('current', btn.dataset.language === lang);
   });
-}
 
-function getReadLessLabel() {
-  const inExperiences = (el) => el.closest('.experiences');
-  const inEducation = (el) => el.closest('.education');
-  return (span) => {
-    if (inExperiences(span)) return currentTranslations?.experiences?.readless ?? 'Read less';
-    if (inEducation(span)) return currentTranslations?.education?.readless ?? 'Read less';
-    return 'Read less';
-  };
-}
-
-function getReadMoreLabel() {
-  const inExperiences = (el) => el.closest('.experiences');
-  const inEducation = (el) => el.closest('.education');
-  return (span) => {
-    if (inExperiences(span)) return currentTranslations?.experiences?.readmore ?? 'Read more';
-    if (inEducation(span)) return currentTranslations?.education?.readmore ?? 'Read more';
-    return 'Read more';
-  };
-}
-
-function syncAccordionLabels() {
-  const getReadLess = getReadLessLabel();
-  const getReadMore = getReadMoreLabel();
-  document.querySelectorAll('.experience-info__container').forEach((container) => {
-    const content = container.querySelector('.experience-info');
-    const span = container.querySelector('.experience-info__description .read-more span');
-    if (!content || !span) return;
-    span.textContent = content.classList.contains('open') ? getReadLess(span) : getReadMore(span);
-  });
+  const toggle = document.getElementById('nav-toggle');
+  toggle.setAttribute('aria-label', translations.nav.menu);
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -84,79 +54,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   });
 
-  // Dark mode
-  const darkModeToggle = document.getElementById('dark-mode-toggle');
-  const savedTheme = localStorage.getItem('theme');
+  // Mobile menu
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
 
-  if (savedTheme === 'dark') {
-    document.documentElement.classList.add('dark');
-    darkModeToggle?.classList.add('active');
-  } else if (savedTheme === 'light') {
-    document.documentElement.classList.remove('dark');
-    darkModeToggle?.classList.remove('active');
-  }
+  const setMenuOpen = (isOpen) => {
+    navLinks.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  };
 
-  darkModeToggle?.addEventListener('click', function () {
-    const isDark = document.documentElement.classList.toggle('dark');
-    darkModeToggle.classList.toggle('active');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  navToggle.addEventListener('click', () => {
+    setMenuOpen(!navLinks.classList.contains('open'));
   });
 
-  // Accordion (Read more / Read less) – uses current language
-  const getReadLess = getReadLessLabel();
-  const getReadMore = getReadMoreLabel();
-
-  document.querySelectorAll('.experience-info__container').forEach((container) => {
-    const toggle = container.querySelector('.experience-info__description .read-more');
-    const content = container.querySelector('.experience-info');
-    const arrow = toggle?.querySelector('svg');
-    const span = toggle?.querySelector('span');
-
-    if (!toggle || !content || !span) return;
-
-    toggle.addEventListener('click', () => {
-      const isOpen = content.classList.contains('open');
-
-      if (isOpen) {
-        content.style.maxHeight = '0px';
-        content.classList.remove('open');
-        span.textContent = getReadMore(span);
-        if (arrow) arrow.style.transform = 'rotate(0deg)';
-      } else {
-        content.classList.add('open');
-        content.style.maxHeight = content.scrollHeight + 'px';
-        span.textContent = getReadLess(span);
-        if (arrow) arrow.style.transform = 'rotate(180deg)';
-      }
-    });
-});
-
-// Projects swiper
-const swiper = new Swiper('.swiper', {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 10,
-    centeredSlides: true,
-    autoHeight: true,
-    autoplay: { 
-      delay: 3000,
-      pauseOnMouseEnter: true,
-    },
-    breakpoints: {
-      0: {
-        autoplay: false,
-      },
-      701: {
-        slidesPerView: 1.7,
-        autoHeight: false,
-        autoplay: { 
-          delay: 3000,
-          pauseOnMouseEnter: true,
-        },
-      },
-    },
-    pagination: {
-      el: '.swiper-pagination',
-    },
+  navLinks.addEventListener('click', (e) => {
+    if (e.target.closest('a')) setMenuOpen(false);
   });
 });
