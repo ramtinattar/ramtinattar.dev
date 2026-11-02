@@ -94,14 +94,9 @@ em {
     text-decoration: none;
 }
 
-.nav-languages {
-    display: flex;
-    gap: 4px;
-    color: var(--muted);
-}
-
-.nav-languages .current {
-    color: var(--text);
+.nav-language {
+    min-width: 44px;
+    min-height: 44px;
     font-weight: 600;
 }
 

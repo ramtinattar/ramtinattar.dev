@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=SN+Pro:wght@300..700&family=Vazirmatn:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=3">
-    <script src="main.js?v=3" defer></script>
+    <link rel="stylesheet" href="style.css?v=4">
+    <script src="main.js?v=4" defer></script>
 </head>
 <body>
     <header class="header">
@@ -21,11 +21,7 @@
                 <a href="#about" data-i18n="nav.about">About</a>
                 <a href="#contact" data-i18n="nav.contact">Contact</a>
             </div>
-            <div class="nav-languages">
-                <button class="current" data-language="en" type="button">EN</button>
-                <span aria-hidden="true">/</span>
-                <button data-language="fr" type="button">FR</button>
-            </div>
+            <button class="nav-language" id="language-toggle" type="button" lang="fr" aria-label="Passer en français">FR</button>
             <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
                 <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 9h16M4 15h16"></path></svg>
             </button>

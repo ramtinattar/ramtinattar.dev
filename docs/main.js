@@ -32,10 +32,12 @@ async function translatePage(lang) {
   applyTranslations(translations);
   localStorage.setItem('lang', lang);
 
-  // Update language button states
-  document.querySelectorAll('[data-language]').forEach((btn) => {
-    btn.classList.toggle('current', btn.dataset.language === lang);
-  });
+  // The button shows the language it switches to
+  const otherLang = lang === 'en' ? 'fr' : 'en';
+  const languageToggle = document.getElementById('language-toggle');
+  languageToggle.textContent = otherLang.toUpperCase();
+  languageToggle.lang = otherLang;
+  languageToggle.setAttribute('aria-label', otherLang === 'fr' ? 'Passer en français' : 'Switch to English');
 
   const toggle = document.getElementById('nav-toggle');
   toggle.setAttribute('aria-label', translations.nav.menu);
@@ -46,12 +48,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   await translatePage(currentLang);
 
   // Language switcher
-  document.querySelectorAll('[data-language]').forEach((btn) => {
-    btn.addEventListener('click', async (e) => {
-      e.preventDefault();
-      const lang = btn.dataset.language;
-      if (lang && lang !== currentLang) await translatePage(lang);
-    });
+  document.getElementById('language-toggle').addEventListener('click', () => {
+    translatePage(currentLang === 'en' ? 'fr' : 'en');
   });
 
   // Mobile menu
