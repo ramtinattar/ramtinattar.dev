@@ -121,7 +121,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       const isScrollingUp = targetTop < window.scrollY;
       const top = isScrollingUp && target.id !== 'top' ? targetTop - header.offsetHeight : targetTop;
 
+      // Decide the header state now: a click leaves it visible until scrolling starts
+      header.classList.toggle('header-hidden', !isScrollingUp && top > header.offsetHeight);
       window.scrollTo({ top, behavior: reducedMotion.matches ? 'auto' : 'smooth' });
+
+      // Move focus to the section so the clicked link does not keep it
+      target.setAttribute('tabindex', '-1');
+      target.focus({ preventScroll: true });
       history.pushState(null, '', link.hash);
     });
   });
