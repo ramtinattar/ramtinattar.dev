@@ -78,10 +78,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     setMenuOpen(!navLinks.classList.contains('open'));
   });
 
-  navLinks.addEventListener('click', (e) => {
-    if (e.target.closest('a')) setMenuOpen(false);
-  });
-
   navOverlay.addEventListener('click', () => setMenuOpen(false));
 
   document.addEventListener('keydown', (e) => {
@@ -109,4 +105,24 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     lastScrollY = scrollY;
   }, { passive: true });
+
+  // Section links land on the exact top of the section. The header hides on
+  // the way down and stays visible on the way up, so only then offset by it.
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      const target = document.querySelector(link.hash);
+      if (!target) return;
+      e.preventDefault();
+      setMenuOpen(false);
+
+      const targetTop = target.id === 'top' ? 0 : target.getBoundingClientRect().top + window.scrollY;
+      const isScrollingUp = targetTop < window.scrollY;
+      const top = isScrollingUp && target.id !== 'top' ? targetTop - header.offsetHeight : targetTop;
+
+      window.scrollTo({ top, behavior: reducedMotion.matches ? 'auto' : 'smooth' });
+      history.pushState(null, '', link.hash);
+    });
+  });
 });
