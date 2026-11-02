@@ -7,7 +7,15 @@
     "close": "Fermer le menu"
   },
   "hero": {
-    "statement": "Développeur Shopify à Paris, je crée des boutiques pour les marques qui soignent les détails.",
+    "statement": "Développeur Shopify à Paris,<br class=\"hero-break\"> je crée des boutiques pour",
+    "words": [
+      "les maisons de luxe.",
+      "les amoureux du chocolat.",
+      "les amis des animaux.",
+      "les gourmands.",
+      "tous ceux qui ont du goût."
+    ],
+    "description": "Développeur Shopify à Paris, je crée des boutiques pour les marques qui soignent les détails.",
     "websitesLabel": "Sites réalisés",
     "websitesValue": "Plus de 100",
     "codingLabel": "Développeur professionnel",

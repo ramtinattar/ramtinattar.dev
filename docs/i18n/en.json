@@ -7,7 +7,15 @@
     "close": "Close menu"
   },
   "hero": {
-    "statement": "Shopify developer in Paris, building stores for brands that care about the details.",
+    "statement": "Shopify developer in Paris, building stores for",
+    "words": [
+      "luxury houses.",
+      "chocolate lovers.",
+      "pet owners.",
+      "foodies.",
+      "anyone with good taste."
+    ],
+    "description": "Shopify developer in Paris, building stores for brands that care about the details.",
     "websitesLabel": "Websites built",
     "websitesValue": "More than 100",
     "codingLabel": "Coding professionally",

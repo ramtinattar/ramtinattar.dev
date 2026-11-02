@@ -24,7 +24,43 @@ function applyTranslations(translations) {
     }
   });
   document.documentElement.lang = currentLang;
-  document.querySelector('meta[name="description"]').content = translations.hero.statement;
+  document.querySelector('meta[name="description"]').content = translations.hero.description;
+}
+
+// Rotating hero line, each word underlined in a project's brand colour
+const typedColors = ['#fbba02', '#6d3b26', '#004d43', '#d54816', '#48688d'];
+let typedTimer;
+
+function startTyping(words) {
+  const el = document.getElementById('hero-typed');
+  const show = (index, length) => {
+    el.textContent = words[index].slice(0, length);
+    el.style.setProperty('--typed-color', typedColors[index]);
+  };
+
+  const typeWord = (index, length) => {
+    show(index, length);
+    if (length < words[index].length) {
+      typedTimer = setTimeout(() => typeWord(index, length + 1), 65);
+    } else {
+      typedTimer = setTimeout(() => deleteWord(index, length), 1900);
+    }
+  };
+
+  const deleteWord = (index, length) => {
+    show(index, length);
+    if (length > 0) {
+      typedTimer = setTimeout(() => deleteWord(index, length - 1), 32);
+    } else {
+      typedTimer = setTimeout(() => typeWord((index + 1) % words.length, 0), 260);
+    }
+  };
+
+  clearTimeout(typedTimer);
+  show(0, words[0].length);
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    typedTimer = setTimeout(() => deleteWord(0, words[0].length), 1900);
+  }
 }
 
 function updateMenuLabel() {
@@ -38,6 +74,7 @@ async function translatePage(lang) {
   const translations = await loadTranslations(lang);
   currentTranslations = translations;
   applyTranslations(translations);
+  startTyping(translations.hero.words);
   localStorage.setItem('lang', lang);
 
   // Highlight the current language in the button

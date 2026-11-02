@@ -202,9 +202,44 @@ em {
     max-width: 620px;
     margin: 0;
     font-family: var(--font-display);
-    font-size: clamp(30px, 3.3vw, 46px);
+    font-size: clamp(30px, 2.9vw, 42px);
     line-height: 1.16;
-    text-wrap: balance;
+}
+
+html[lang="fr"] .hero-statement {
+    font-size: clamp(28px, 2.55vw, 37px);
+}
+
+.hero-typed {
+    display: block;
+    min-height: 1.2em;
+    font-style: italic;
+    white-space: nowrap;
+}
+
+.hero-typed-word {
+    padding-bottom: 2px;
+    border-bottom: 4px solid var(--typed-color, #fbba02);
+}
+
+.hero-typed-caret {
+    display: inline-block;
+    width: 2px;
+    height: 0.9em;
+    margin-left: 3px;
+    background: currentColor;
+    vertical-align: -0.08em;
+    animation: typed-caret 1s steps(2, jump-none) infinite;
+}
+
+@keyframes typed-caret {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
 
 .hero-facts {
@@ -478,6 +513,12 @@ em {
     gap: 32px;
 }
 
+@media (max-width: 1199px) {
+    .hero-break {
+        display: none;
+    }
+}
+
 @media (max-width: 860px) {
     body {
         font-size: 17px;
@@ -595,6 +636,14 @@ em {
         grid-column: 1 / -1;
         font-size: 29px;
         line-height: 1.18;
+    }
+
+    html[lang="fr"] .hero-statement {
+        font-size: min(7.2vw, 29px);
+    }
+
+    .hero-typed-word {
+        border-bottom-width: 3px;
     }
 
     .hero-image {
@@ -744,6 +793,10 @@ em {
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
+    }
+
+    .hero-typed-caret {
+        animation: none;
     }
 
     .header,
