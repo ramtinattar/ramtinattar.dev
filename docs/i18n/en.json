@@ -43,9 +43,11 @@
     "hetic": "HETIC, Bachelor’s in web development",
     "alliance": "Alliance Française, French A1 to B2",
     "skills": "Skills",
-    "skillsList": "Shopify, Liquid, JavaScript, TypeScript, React.js, Vue.js, jQuery, HTML 5, CSS 3, Sass, SEO, web performance, AI-assisted development, Git, Figma"
+    "diploma": "Mathematics and Physics Diploma",
+    "skillAi": "AI-assisted development",
+    "skillPerformance": "Web performance"
   },
   "contact": {
-    "title": "Have a store in mind?"
+    "title": "Wanna get in touch ?"
   }
 }

@@ -43,9 +43,11 @@
     "hetic": "HETIC, Bac+3 en développement web",
     "alliance": "Alliance Française, français A1 à B2",
     "skills": "Compétences",
-    "skillsList": "Shopify, Liquid, JavaScript, TypeScript, React.js, Vue.js, jQuery, HTML 5, CSS 3, Sass, SEO, performance web, développement assisté par l’IA, Git, Figma"
+    "diploma": "Baccalauréat Mathématiques et Physique",
+    "skillAi": "Développement avec l’IA",
+    "skillPerformance": "Performance web"
   },
   "contact": {
-    "title": "Vous avez une boutique en tête ?"
+    "title": "Envie d’échanger ?"
   }
 }
