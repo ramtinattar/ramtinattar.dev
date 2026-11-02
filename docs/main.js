@@ -32,12 +32,12 @@ async function translatePage(lang) {
   applyTranslations(translations);
   localStorage.setItem('lang', lang);
 
-  // The button shows the language it switches to
-  const otherLang = lang === 'en' ? 'fr' : 'en';
+  // Highlight the current language in the button
   const languageToggle = document.getElementById('language-toggle');
-  languageToggle.textContent = otherLang.toUpperCase();
-  languageToggle.lang = otherLang;
-  languageToggle.setAttribute('aria-label', otherLang === 'fr' ? 'Passer en français' : 'Switch to English');
+  languageToggle.querySelectorAll('[data-language]').forEach((el) => {
+    el.classList.toggle('current', el.dataset.language === lang);
+  });
+  languageToggle.setAttribute('aria-label', lang === 'en' ? 'Passer en français' : 'Switch to English');
 
   const toggle = document.getElementById('nav-toggle');
   toggle.setAttribute('aria-label', translations.nav.menu);

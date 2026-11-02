@@ -95,8 +95,12 @@ em {
 }
 
 .nav-language {
-    min-width: 44px;
     min-height: 44px;
+    color: var(--muted);
+}
+
+.nav-language .current {
+    color: var(--text);
     font-weight: 600;
 }
 
