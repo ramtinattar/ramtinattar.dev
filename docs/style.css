@@ -69,8 +69,23 @@ em {
 
 /* header */
 .header {
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 3;
+    background: var(--bg);
+    transition: transform 0.45s var(--ease-menu), box-shadow 0.3s ease;
+}
+
+.header-scrolled {
+    box-shadow: 0 1px 0 var(--line);
+}
+
+.header-hidden:not(:focus-within) {
+    box-shadow: none;
+    transform: translateY(-100%);
+}
+
+.header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -464,7 +479,7 @@ em {
         font-size: 17px;
     }
 
-    .header {
+    .header-inner {
         padding: 12px var(--gutter);
     }
 
@@ -475,15 +490,6 @@ em {
 
     body.menu-open {
         overflow: hidden;
-    }
-
-    .header {
-        transition: background-color 0.3s ease 0.3s;
-    }
-
-    .header.menu-open {
-        background: var(--bg);
-        transition-delay: 0s;
     }
 
     .nav-toggle {

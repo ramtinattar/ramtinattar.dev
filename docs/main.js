@@ -89,4 +89,24 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   window.matchMedia('(min-width: 861px)').addEventListener('change', () => setMenuOpen(false));
+
+  // Hide the header on scroll down, reveal it on scroll up
+  const scrollThreshold = 6;
+  let lastScrollY = Math.max(window.scrollY, 0);
+
+  window.addEventListener('scroll', () => {
+    const scrollY = Math.max(window.scrollY, 0);
+    header.classList.toggle('header-scrolled', scrollY > 0);
+    if (navLinks.classList.contains('open')) return;
+
+    const delta = scrollY - lastScrollY;
+    if (scrollY <= header.offsetHeight) {
+      header.classList.remove('header-hidden');
+    } else if (Math.abs(delta) >= scrollThreshold) {
+      header.classList.toggle('header-hidden', delta > 0);
+    } else {
+      return;
+    }
+    lastScrollY = scrollY;
+  }, { passive: true });
 });
