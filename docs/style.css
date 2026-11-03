@@ -158,7 +158,8 @@ em {
     transform: rotate(-45deg);
 }
 
-.nav-overlay {
+.nav-overlay,
+.nav-edge {
     display: none;
 }
 
@@ -659,14 +660,8 @@ em {
         font-size: 15px;
     }
 
-    body {
-        transition: background-color 0.5s ease;
-    }
-
-    /* Safari tints its toolbar from the page background: match the overlay */
     body.menu-open {
         overflow: hidden;
-        background-color: #848586;
     }
 
     .nav-toggle {
@@ -678,12 +673,34 @@ em {
         z-index: 2;
         inset: 0;
         display: block;
-        background: rgba(21, 23, 28, 0.5);
         opacity: 0;
         visibility: hidden;
+        transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+    }
+
+    /* Safari 26 tints its toolbars from fixed elements at the screen edges, and turns
+       a blurred one white: keep the blur on an inner layer and give it a solid edge */
+    .nav-overlay-fill {
+        position: absolute;
+        inset: 0;
+        background: rgba(21, 23, 28, 0.5);
         -webkit-backdrop-filter: blur(6px);
         backdrop-filter: blur(6px);
-        transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+    }
+
+    .nav-edge {
+        position: fixed;
+        z-index: 2;
+        right: 0;
+        bottom: -8px;
+        left: 0;
+        height: 12px;
+        background: #4b4c50;
+        pointer-events: none;
+    }
+
+    body.menu-open .nav-edge {
+        display: block;
     }
 
     .nav-overlay.open {
