@@ -670,6 +670,11 @@ em {
         transition: filter 0.5s ease;
     }
 
+    /* the filter only darkens painted areas, so main needs its own background */
+    main {
+        background: var(--bg);
+    }
+
     body.menu-open main,
     body.menu-open .footer {
         filter: blur(6px) brightness(0.55);
