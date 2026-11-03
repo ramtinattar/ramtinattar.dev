@@ -567,6 +567,7 @@ em {
         flex: none;
         gap: 12px;
         padding-bottom: 0;
+        width: 100%;
     }
 
     .project-title {
