@@ -525,7 +525,7 @@ em {
     }
 
     .hero-title {
-        font-size: min(16.8vw, 194px);
+        font-size: min(15.8vw, 194px);
         white-space: nowrap;
     }
 
