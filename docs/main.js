@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (e.key === 'Escape') setMenuOpen(false);
   });
 
-  window.matchMedia('(min-width: 861px)').addEventListener('change', () => setMenuOpen(false));
+  window.matchMedia('(min-width: 701px)').addEventListener('change', () => setMenuOpen(false));
 
   // Hide the header on scroll down, reveal it on scroll up
   const scrollThreshold = 6;
