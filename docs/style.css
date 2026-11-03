@@ -655,8 +655,14 @@ em {
         font-size: 15px;
     }
 
+    body {
+        transition: background-color 0.5s ease;
+    }
+
+    /* the blur blends the page edges with the body: dim it too so no light fringe shows */
     body.menu-open {
         overflow: hidden;
+        background-color: #858685;
     }
 
     .nav-toggle {
