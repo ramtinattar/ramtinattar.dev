@@ -54,7 +54,9 @@
     "skills": "Skills",
     "diploma": "Mathematics and Physics Diploma",
     "skillAi": "AI-assisted development",
-    "skillPerformance": "Web performance"
+    "skillPerformance": "Web performance",
+    "skillCrm": "HubSpot CRM",
+    "skillDesign": "Web design"
   },
   "contact": {
     "title": "Wanna get in touch ?"

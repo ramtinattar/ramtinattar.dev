@@ -54,7 +54,9 @@
     "skills": "Compétences",
     "diploma": "Baccalauréat Mathématiques et Physique",
     "skillAi": "Développement avec l’IA",
-    "skillPerformance": "Performance web"
+    "skillPerformance": "Performance web",
+    "skillCrm": "CRM HubSpot",
+    "skillDesign": "Web design"
   },
   "contact": {
     "title": "Envie d’échanger ?"
