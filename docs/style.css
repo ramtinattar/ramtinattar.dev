@@ -206,9 +206,12 @@ em {
     line-height: 1.16;
 }
 
+/* room for italic letters that lean past the edge, so Safari repaints them when erased */
 .hero-typed {
     display: block;
     min-height: 1.2em;
+    margin-left: -0.25em;
+    padding-left: 0.25em;
     font-style: italic;
     white-space: nowrap;
 }
@@ -656,8 +659,14 @@ em {
         font-size: 15px;
     }
 
+    body {
+        transition: background-color 0.5s ease;
+    }
+
+    /* Safari tints its toolbar from the page background: match the overlay */
     body.menu-open {
         overflow: hidden;
+        background-color: #848586;
     }
 
     .nav-toggle {
