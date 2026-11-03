@@ -202,12 +202,8 @@ em {
     max-width: 620px;
     margin: 0;
     font-family: var(--font-display);
-    font-size: clamp(30px, 2.9vw, 42px);
-    line-height: 1.16;
-}
-
-html[lang="fr"] .hero-statement {
     font-size: clamp(28px, 2.55vw, 37px);
+    line-height: 1.16;
 }
 
 .hero-typed {
@@ -513,7 +509,7 @@ html[lang="fr"] .hero-statement {
     gap: 32px;
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 861px) and (max-width: 1199px) {
     .hero-break {
         display: none;
     }
@@ -634,12 +630,8 @@ html[lang="fr"] .hero-statement {
     .hero-statement {
         grid-row: 1;
         grid-column: 1 / -1;
-        font-size: 29px;
+        font-size: min(6.5vw, 29px);
         line-height: 1.18;
-    }
-
-    html[lang="fr"] .hero-statement {
-        font-size: min(7.2vw, 29px);
     }
 
     .hero-typed-word {
@@ -653,7 +645,7 @@ html[lang="fr"] .hero-statement {
 
     .hero-facts {
         gap: 8px;
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .project-inner,
