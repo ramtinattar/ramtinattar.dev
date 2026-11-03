@@ -99,12 +99,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Mobile menu
   const navToggle = document.getElementById('nav-toggle');
   const navLinks = document.getElementById('nav-links');
-  const navOverlay = document.getElementById('nav-overlay');
   const header = document.querySelector('.header');
 
   const setMenuOpen = (isOpen) => {
     navLinks.classList.toggle('open', isOpen);
-    navOverlay.classList.toggle('open', isOpen);
     header.classList.toggle('menu-open', isOpen);
     document.body.classList.toggle('menu-open', isOpen);
     navToggle.setAttribute('aria-expanded', String(isOpen));
@@ -115,7 +113,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     setMenuOpen(!navLinks.classList.contains('open'));
   });
 
-  navOverlay.addEventListener('click', () => setMenuOpen(false));
+  // A tap anywhere outside the header closes the menu
+  document.addEventListener('click', (e) => {
+    if (navLinks.classList.contains('open') && !header.contains(e.target)) setMenuOpen(false);
+  });
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') setMenuOpen(false);
